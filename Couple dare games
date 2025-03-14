@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couples Dare Game 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Couples Dare Game 💖</h1>
+        
+        <label for="category">Choose a category:</label>
+        <select id="category">
+            <option value="romantic">Romantic</option>
+            <option value="fun">Fun</option>
+            <option value="spicy">Spicy</option>
+            <option value="home_alone">Home Alone</option>
+        </select>
+
+        <p id="dare-text">Click the button to get a dare!</p>
+        
+        <button onclick="generateDare()">🎲 Get a Dare</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
