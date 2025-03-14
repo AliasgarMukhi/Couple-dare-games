@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9e3e3;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #555;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #e74c3c;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    color: #333;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+#dare-text {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    color: #333;
+    min-height: 50px;
+}
+
+.fade {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
