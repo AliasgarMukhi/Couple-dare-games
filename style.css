@@ -1,33 +1,36 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9e3e3;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft gradient background */
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 100%;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #e74c3c;
     margin-bottom: 1.5rem;
+    font-family: 'Pacifico', cursive;
 }
 
 label {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #555;
     display: block;
     margin-bottom: 0.5rem;
@@ -35,24 +38,35 @@ label {
 
 select {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.8rem;
     font-size: 1rem;
     border: 2px solid #e74c3c;
     border-radius: 8px;
     margin-bottom: 1.5rem;
     background-color: #fff;
     color: #333;
+    cursor: pointer;
+    appearance: none; /* Remove default arrow */
+    text-align: center;
+}
+
+select:focus {
+    outline: none;
+    border-color: #c0392b;
 }
 
 button {
     background-color: #e74c3c;
     color: #fff;
     border: none;
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 200px;
 }
 
 button:hover {
@@ -60,10 +74,15 @@ button:hover {
 }
 
 #dare-text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 1.5rem 0;
     color: #333;
     min-height: 50px;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .fade {
@@ -73,4 +92,29 @@ button:hover {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* Add a cute heart icon to the button */
+button::after {
+    content: ' 💖';
+}
+
+/* Center everything */
+.container > * {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+/* Add a subtle background pattern */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><circle cx="50" cy="50" r="40" fill="%23ffcccc" /></svg>') repeat;
+    opacity: 0.1;
+    z-index: -1;
 }
