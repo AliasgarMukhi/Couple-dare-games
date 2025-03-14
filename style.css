@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Soft gradient background */
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb); /* Soft gradient background */
     color: #333;
     display: flex;
     justify-content: center;
@@ -15,18 +15,20 @@ body {
 .container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
     width: 100%;
+    backdrop-filter: blur(10px); /* Adds a blur effect to the container */
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #e74c3c;
     margin-bottom: 1.5rem;
     font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -41,13 +43,14 @@ select {
     padding: 0.8rem;
     font-size: 1rem;
     border: 2px solid #e74c3c;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 1.5rem;
     background-color: #fff;
     color: #333;
     cursor: pointer;
     appearance: none; /* Remove default arrow */
     text-align: center;
+    transition: border-color 0.3s ease;
 }
 
 select:focus {
@@ -61,16 +64,18 @@ button {
     border: none;
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 1rem;
     width: 100%;
     max-width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
     background-color: #c0392b;
+    transform: translateY(-2px); /* Adds a slight lift effect */
 }
 
 #dare-text {
@@ -79,10 +84,11 @@ button:hover {
     color: #333;
     min-height: 50px;
     font-weight: bold;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease;
 }
 
 .fade {
